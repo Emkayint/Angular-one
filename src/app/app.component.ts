@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Car } from './cars';
 
 @Component({
   selector: 'app-root',
@@ -9,4 +10,9 @@ export class AppComponent {
   title = 'my-app';
   name = "star student";
   colors: string[] = ['red', 'blue', 'green', 'purple'];
+
+  subaru: Car = {make : 'subaru', model: "outback", miles: 200000};
+  honda: Car = { make: "Toyata", model: 'V8', miles: 20 };
+  mercedece: Car = { make: "Mercedes", model: 'gWagon', miles: 2000 };
+  cars: Car [] = [this.subaru, this.honda, this.mercedece];
 }

@@ -15,5 +15,9 @@
       <li>color {{i + 1}} is {{color}}</li>
     </ul>
   </div>
+
+  <div class="mycars" *ngFor="let car of cars">
+    {{ car.make}} {{ car.model}} with a milage of {{ car.miles }}
+  </div>
 </body>
 </html>
