@@ -36,5 +36,11 @@
       <button class="btn btn-success" (click)="increment()">Increase counter</button>
     </div>
   </div>
+
+  <!-- Two way data binding -->
+  <div class="two-way">
+    {{ username }} <br>
+    <input [(ngModel)]="username" placeholder="enter a username">
+  </div>
 </body>
 </html>

@@ -11,6 +11,7 @@ export class AppComponent {
   title = 'my-app';
   name = "star student";
   colors: string[] = ['red', 'blue', 'green', 'purple'];
+  username = "";
 
   // subaru: Car = {make : 'subaru', model: "outback", miles: 200000};
   // honda: Car = { make: "Toyata", model: 'V8', miles: 20 };
@@ -31,4 +32,6 @@ constructor(private transportationService: TransportationService){
   increment(){
     this.counter++;
   }
+
+  
 }
