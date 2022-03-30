@@ -7,15 +7,18 @@
   <title>my-app</title>
 </head>
 <body>
+  <!-- Display a name -->
   <div>
     {{name}}
   </div>
   <div>
+    <!-- Angular for loop -->
     <ul *ngFor="let color of colors; let i = index">
       <li>color {{i + 1}} is {{color}}</li>
     </ul>
   </div>
 
+  <!-- iterating through custom type -->
   <div class="mycars" *ngFor="let car of cars">
     {{ car.make}} {{ car.model}} with a milage of {{ car.miles }}
   </div>
