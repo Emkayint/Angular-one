@@ -26,4 +26,9 @@ constructor(private transportationService: TransportationService){
   saySomething(){
     alert("Say Something");
   }
+
+  counter = 0;
+  increment(){
+    this.counter++;
+  }
 }

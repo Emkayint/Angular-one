@@ -23,8 +23,18 @@
   <div class="mycars" *ngFor="let car of cars">
     {{ car.make}} {{ car.model}} with a milage of {{ car.miles }}
   </div>
+
+  <!-- Event handlers -->
   <div class="buttons">
     <button class="btn btn-primary" (click)="saySomething()">Say Something</button>
+  </div>
+
+  <!-- A counter -->
+  <div class="simple-counter p-3">
+    <span class="badge bg-black"> {{ counter }} </span>
+    <div class="p-3">
+      <button class="btn btn-success" (click)="increment()">Increase counter</button>
+    </div>
   </div>
 </body>
 </html>
