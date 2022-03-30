@@ -22,4 +22,8 @@ export class AppComponent {
 constructor(private transportationService: TransportationService){
   this.cars = this.transportationService.getCars();
 }
+
+  saySomething(){
+    alert("Say Something");
+  }
 }
