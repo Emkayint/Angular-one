@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'my-app';
   name = "star student";
+  colors: string[] = ['red', 'blue', 'green', 'purple'];
 }
