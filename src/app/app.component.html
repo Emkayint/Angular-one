@@ -11,8 +11,8 @@
     {{name}}
   </div>
   <div>
-    <ul *ngFor="let color of colors">
-      <li>{{color}}</li>
+    <ul *ngFor="let color of colors; let i = index">
+      <li>color {{i + 1}} is {{color}}</li>
     </ul>
   </div>
 </body>
